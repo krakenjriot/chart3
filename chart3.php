@@ -1,10 +1,10 @@
 <?php
 
-  $title = "NEW Ambient Temperature Graph (c)";
-  $legend_sensor_name = "Temprature";
-  $legend_time_name =  "Time";
-  $number_of_samples =  "1000";
-  $interval_span =  "30"; //mins
+  //$title = "NEW Ambient Temperature Graph (c)";
+  //$legend_sensor_name = "Temprature";
+  //$legend_time_name =  "Time";
+  //$number_of_samples =  "1000";
+  //$interval_span =  "30"; //mins
 
   date_default_timezone_set("Asia/Riyadh");
 
@@ -33,14 +33,14 @@ google.charts.load('current', {
             txt = txt.substring(0, txt.length - 1);
           }
 
-          var txtData = JSON.parse('[["Minutes", "Temp ºC", "Humidity %"],' + txt + ']');
+          var txtData = JSON.parse('[["Datetime", "Temp ºC", "Humidity %"],' + txt + ']');
           var data = google.visualization.arrayToDataTable(txtData);
 
           var options = {
 			title: 'Date/Time: <?php echo date('h A ( M-d-Y )',time()); ?>',
             curveType: 'function',
             hAxis: {
-              title: 'Last 15 Minutes',
+              title: 'Last 30 Minutes',
               //direction: '-1'
             },
             legend: { position: 'bottom' }
