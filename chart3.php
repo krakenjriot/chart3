@@ -2,7 +2,7 @@
   //rolly falco
 
 
-  $title = "NEW Ambient Temperature Graph (c)";
+  //$title = "NEW Ambient Temperature Graph (c)";
   $legend_sensor_name = "Temprature";
   $legend_time_name =  "Time";
   $number_of_samples =  "1000";
@@ -22,7 +22,7 @@
 
 <script language="JavaScript" type="text/javascript">
 	//setTimeout("location.href = 'chart3.php?t_span=<?php echo $t_span; ?>'",15000); // milliseconds, so 10 seconds = 10000ms
-	setTimeout("location.href = 'chart4.php?t_span=<?php echo $t_span; ?>'", 1 * 60 * 1000 ); // milliseconds, so 10 seconds = 10000ms
+	setTimeout("location.href = 'chart3.php?t_span=<?php echo $t_span; ?>'", 1 * 60 * 1000 ); // milliseconds, so 10 seconds = 10000ms
 </script>
 
 </script>
