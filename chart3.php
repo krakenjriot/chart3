@@ -1,4 +1,6 @@
 <?php
+  //rolly falco
+
 
   $title = "NEW Ambient Temperature Graph (c)";
   $legend_sensor_name = "Temprature";
@@ -35,7 +37,7 @@ google.charts.load('current', {
     function drawChart() {
       var jsonData = $.ajax({
           //url: "fetch_4.php",
-          url: 'fetch_4.php?t_span=<?php echo $t_span; ?>',
+          url: 'fetch_3.php?t_span=<?php echo $t_span; ?>',
           dataType: "json",
           async: false
           }).responseText;
