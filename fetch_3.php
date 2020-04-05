@@ -74,7 +74,7 @@ if ($result->num_rows > 0) {
     $d = date("d",$time); //day
     $h = date("H",$time); // hour
     $m = date("i",$time); //minute
-    $s = date("s",$time); //second
+    //$s = date("s",$time); //second
     $t_current = $y.$mo.$d.$h.$m;
   }//while
 }//if
