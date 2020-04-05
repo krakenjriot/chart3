@@ -61,7 +61,7 @@ $t_current = "";
 $t_prev = "";
 //$sql = " SELECT *  FROM tbl_sensors ORDER BY id DESC LIMIT 500 ";
 //$sql = " SELECT *  FROM tbl_sensors WHERE dtime BETWEEN '".date("Y-m-d H:i:s",strtotime("-$interval_span minutes"))."' AND '".date("Y-m-d H:i:s",strtotime("now"))."' ORDER BY id DESC LIMIT $number_of_samples ";
-$sql = " SELECT *  FROM tbl_sensors WHERE dtime BETWEEN '".date("Y-m-d H:i:s",strtotime("-$interval_span minutes"))."' AND '".date("Y-m-d H:i:s",strtotime("now"))."' ORDER BY id DESC ";
+$sql = " SELECT *  FROM tbl_sensors WHERE dtime BETWEEN '".date("Y-m-d H:i:s",strtotime("-$interval_span minutes"))."' AND '".date("Y-m-d H:i:s",strtotime("now"))."' ORDER BY dtime DESC ";
 
 $result = $conn->query($sql);
 
@@ -80,7 +80,7 @@ if ($result->num_rows > 0) {
 }//if
 
 
-$sql = " SELECT *  FROM tbl_sensors WHERE dtime BETWEEN '".date("Y-m-d H:i:s",strtotime("-$interval_span minutes"))."' AND '".date("Y-m-d H:i:s",strtotime("now"))."' ORDER BY id DESC ";
+$sql = " SELECT *  FROM tbl_sensors WHERE dtime BETWEEN '".date("Y-m-d H:i:s",strtotime("-$interval_span minutes"))."' AND '".date("Y-m-d H:i:s",strtotime("now"))."' ORDER BY dtime DESC ";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
