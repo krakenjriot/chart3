@@ -33,7 +33,7 @@ google.charts.load('current', {
   callback: function () {
     drawChart();
     //setInterval(drawChart, (1 * 60 * 1000));
-    setInterval(drawChart, (5000));
+    setInterval(drawChart, (3000));
     function drawChart() {
       var jsonData = $.ajax({
           //url: "fetch_4.php",
