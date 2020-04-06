@@ -2,7 +2,7 @@
   //rolly falco
 
 
-  $title = "NEW Ambient Temperature Graph (c)";
+  $title = "Chart / Graph (c)";
   $legend_sensor_name = "Temprature";
   $legend_time_name =  "Time";
   $number_of_samples =  "1000";

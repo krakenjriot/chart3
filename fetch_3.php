@@ -35,8 +35,8 @@ echo '{
   "cols":
 			[
         {"id":"","label":"Time","pattern":"","type":"datetime"},
-        {"id":"","label":"Temp","pattern":"","type":"number"},
-        {"id":"","label":"Hum","pattern":"","type":"number"}
+        {"id":"","label":"'.$legend_sensor_name1.'","pattern":"","type":"number"},
+        {"id":"","label":"'.$legend_sensor_name2.'","pattern":"","type":"number"}
       ],
   "rows":
 			[';
