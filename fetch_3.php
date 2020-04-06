@@ -79,7 +79,6 @@ if ($result->num_rows > 0) {
   }//while
 }//if
 
-
 $sql = " SELECT *  FROM tbl_sensors WHERE dtime BETWEEN '".date("Y-m-d H:i:s",strtotime("-$interval_span minutes"))."' AND '".date("Y-m-d H:i:s",strtotime("now"))."' ORDER BY dtime DESC ";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
@@ -120,8 +119,6 @@ if ($result->num_rows > 0) {
 
   }//while
 }//if
-
-
 
 $out = rtrim($out, ",");
 
