@@ -115,7 +115,7 @@ if ($result->num_rows > 0) {
     //else $out .=  '{"c":[{"v":"'.$dt.'","2014-12-06 10:30:00":"null"},{"v":'.$temp.',"f":null},{"v":'.$hum.',"f":null}]},';
 
     if($t_prev == $t_current) continue;
-    else $out .=  '{"c":[{"v":"'.$dt.'","2014-12-06 10:30:00":"null"},{"v":'.$temp.',"f":null},{"v":'.$hum.',"f":null}]},';
+    else $out .=  '{"c":[{"v":"'.$dt.'","f":"2014-12-06 10:30:00"},{"v":'.$temp.',"f":null},{"v":'.$hum.',"f":null}]},';
 
   }//while
 }//if
